@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Keyboard</title>
+  <link rel="Web Icon" type="png" href="../Images/logo.jpg">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      grid-gap: 20px;
+    }
+
+    .product-card {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      position: relative;
+      transition: transform 0.3s ease-in-out;
+      cursor: pointer;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .product-info {
+      padding: 20px;
+    }
+
+    .product-title {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .product-description {
+      color: #666;
+      margin-bottom: 15px;
+      line-height: 1.5;
+    }
+
+    .product-price {
+      font-size: 1em;
+      font-weight: bold;
+      color: #0cd6a4;
+    }
+
+    h1 {
+      color: #333;
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+<h1>Keyboard</h1>
+<div class="product-grid">
+  <div class='product-card' onclick="navigateToProduct('Ram1.html')">
+  <img class='product-img' src='../Images/keyboard/2337975481.png' >
+    <div class='product-info'>
+    <p class='product-title'>DELL KB 216-Wired keyboard</p>
+    <p class='product-price'>₹569</p>
+    </div>
+    </div>
+    <div class='product-card' onclick="navigateToProduct('Ram1.html')">
+      <img class='product-img' src='../Images/keyboard/download.jpg' >
+        <div class='product-info'>
+        <p class='product-title'>portronic POR 2113-wireless Keyboard</p>
+        <p class='product-price'>₹985</p>
+        </div>
+        </div>
+        <div class='product-card' onclick="navigateToProduct('Ram1.html')">
+          <img class='product-img' src='../Images/keyboard/a7238e16-dc38-4d1b-aef3-ec100b1b99f5.__CR0,0,970,300_PT0_SX970_V1___.jpg' >
+            <div class='product-info'>
+            <p class='product-title'>Zebronics ZEB-K20</p>
+            <p class='product-price'>₹250</p>
+            </div> 
+            </div>
+           
+</div>
+
+<script>
+  function navigateToProduct(page) {
+    window.location.href = page;
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="../Css/Login.css">
+  <link rel="Web Icon" type="png" href="../Images/logo.jpg">
+  <style>
+    #error
+    {
+      display:block;
+      color:#333;
+      margin-left:130px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="../Images/logo.jpg" alt="Company Logo">
+      <h2 id="head">Infotech</h2>
+    </div>
+    <div class="form">
+      <h3>Login Form</h3>
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="name">Username:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <div class="form-group">
+          <button type="submit" name="submit" >Login</button>
+        </div>
+      </form>
+      <p>Don't have an account? <a href="register.html">Register here</a></p>
+    </div>
+  </div>
+</body>
+</html>

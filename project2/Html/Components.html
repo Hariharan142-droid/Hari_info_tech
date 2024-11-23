@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Components</title>
+  <link rel="Web Icon" type="png" href="../Images/logo.jpg">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 20px;
+    }
+
+    .card {
+      width: 300px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin: 20px;
+      overflow: hidden;
+      padding: 40px;
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h3 {
+      margin-top: 0;
+    }
+
+    .card-content p {
+      margin: 10px 0;
+    }
+
+    .button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      color: #fff;
+      text-align: center;
+      text-decoration: none;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <!-- RAM Product Card -->
+  <div class="card">
+    <img src="../Images/ram.jpg" alt="RAM">
+    <div class="card-content">
+      <h3>RAM</h3>
+      <p>Random Access Memory (RAM) is a type of computer memory that can be accessed randomly; that is, any byte of memory can be accessed without touching the preceding bytes.</p>
+      <a href="Ram.html" class="button">View Details</a>
+    </div>
+  </div>
+
+  <!-- SSD Product Card -->
+  <div class="card">
+    <img src="../Images/ssd.webp" alt="SSD">
+    <div class="card-content">
+      <h3>SSD</h3>
+      <p>A solid-state drive (SSD) is a solid-state storage device that uses integrated circuit assemblies to store data persistently, typically using flash memory.it functioning as super fast input and output.</p>
+      <a href="ssd.html" class="button">View Details</a>
+    </div>
+  </div>
+
+  <!-- Processor Product Card -->
+  <div class="card">
+    <img src="../Images/process.jpg" alt="Processor">
+    <div class="card-content">
+      <h3>Processor</h3>
+      <p>A processor, or "microprocessor," is a small chip that resides in computers and other electronic devices. Its basic job is to receive input and provide the appropriate output.</p>
+      <a href="processor.html" class="button">View Details</a>
+    </div>
+  </div>
+
+  <!-- SMPS Product Card -->
+  <div class="card">
+    <img src="../Images/smps.jpg" alt="SMPS">
+    <div class="card-content">
+      <h3>SMPS</h3>
+      <p>A switched-mode power supply (SMPS) is an electronic circuit that converts power using switching devices that are turned on and off at high frequencies, and storage components such as inductors or capacitors to supply power when the switching device is in its non-conduction state.</p>
+      <a href="smps.html" class="button">View Details</a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
